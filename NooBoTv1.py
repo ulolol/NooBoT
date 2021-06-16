@@ -94,12 +94,12 @@ if st.sidebar.button('Initialize bot'):
 
 user_input = get_text()
 
-st.text_area("Bot:", value="Welcome! Im a basic bot so dont expect a lot from me. Ok? thx byee! I mean you can enter whatever you want now .......", height=200, max_chars=None, key=None)
+st.text_area("NooBoT v1-alpha", value="Welcome! Im a basic bot so dont expect a lot from me. Ok? thx byee! I mean you can enter whatever you want now .......", height=50, max_chars=None, key=None)
 
 if True:
     if user_input=='Bye' or user_input =='bye':
         st.text_area("Bot:", value="OK ! See ya !", height=200, max_chars=None, key=None)
-       #break
+        #quit()
     st.text_area("Bot:", value=bot.get_response(user_input), height=200, max_chars=None, key=None)
     
 else:
