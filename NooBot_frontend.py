@@ -24,8 +24,10 @@ st.text_area("Bot:", value="Welcome! Im a basic bot so dont expect a lot from me
 if True:
     if user_input=='Bye' or user_input =='bye':
         st.text_area("Bot:", value="OK ! See ya !", height=200, max_chars=None, key=None)
-        break
+       #break
     st.text_area("Bot:", value=bot.get_response(user_input), height=200, max_chars=None, key=None)
     
 else:
     st.text_area("Bot:", value="Please start the bot by clicking sidebar button", height=200, max_chars=None, key=None)
+
+
